@@ -1,10 +1,10 @@
-Match 0: StackAdapt - Carroll
-Match 1: Maropost - Juanita
-Match 2: SkipTheDishes - Sarah
-Match 3: SendtoNews - Lottie
-Match 4: Refresh Financial - Alfredo
-Match 5: Bench Accounting - Anthony
-Match 6: Benevity - Miriam
-Match 7: Prodigy Game - Antonia
-Match 8: Diply - Francis
-Match 9: Prodigy Ventures - Stephen
+Match 0: Diply - Carroll
+Match 1: Prodigy Game - Juanita
+Match 2: Prodigy Ventures - Sarah
+Match 3: Bench Accounting - Lottie
+Match 4: SkipTheDishes - Alfredo
+Match 5: StackAdapt - Anthony
+Match 6: SendtoNews - Miriam
+Match 7: Maropost - Antonia
+Match 8: Refresh Financial - Francis
+Match 9: Benevity - Stephen

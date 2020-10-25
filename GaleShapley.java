@@ -178,8 +178,8 @@ public class GaleShapley
         for ( int i = 0 ; i < n ; i++ )
         { for ( int j = 0 ; j < n ; j++ )       //Nested Loop to iterate through matrix
             {
-                PQPair temp = new PQPair(matrix[j][i].getEmployerRanking(), i);
-                PQ[j].insert(temp);       //PQ[e] takes matrix[s][e] (score given by e to s)
+                PQPair temp = new PQPair(matrix[i][j].getEmployerRanking(), j);
+                PQ[i].insert(temp);       //PQ[e] takes matrix[s][e] (score given by e to s)
             }
         }
     }
@@ -192,7 +192,8 @@ public class GaleShapley
     String[] execute()
     {
         while ( !Sue.empty() )
-        {            
+        {
+
             int e = Sue.pop();      //e is looking for a student
             int s = PQ[e].removeMin().getStudent();     //Most preferred student of e
             int e2 = students[s];
@@ -211,11 +212,11 @@ public class GaleShapley
                 Sue.push(e);        //s rejects offer from e
             }
         }
-
+        
         matches = new String[n];
         for ( int i = 0 ; i < n ; i++ )     //Return the set of stable matches
         {
-            matches[i] = "Match " + i + ": " + employersList[students[i]].getEmployer() + " - " + studentsList[employers[i]].getStudent();
+            matches[i] = "Match " + i + ": " + employersList[i].getEmployer() + " - " + studentsList[employers[i]].getStudent();
         }
         
         return matches;

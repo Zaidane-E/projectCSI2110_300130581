@@ -48,7 +48,7 @@ public class PQPair implements Comparable<PQPair>
     @Override
     public int compareTo(PQPair other)
     {
-        return Integer.compare(this.getEmployer(), other.getEmployer());
+        return Integer.compare(this.getEmployer(), other.employer);
     }
 
     /**
